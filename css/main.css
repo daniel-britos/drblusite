@@ -1,0 +1,44 @@
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+:root {
+    --color-01: #497e6a;
+    --color-02: #0b344d;
+    --color-03: #057ab9;
+    --color-04: #e9df9a;
+    --color-05: #ea8f72;
+    --color-06: #b43333;
+    --color-07: rgb(69, 69, 187);
+    --color-08: #d75a58;
+}
+
+body {
+    background: var(--color-02);
+    color: white;
+    margin: 0;
+    animation-name: open;
+    animation-duration: 1s;
+}
+.wrapper {
+    background-color: var(--color-02);
+    max-width: 1124px;
+    margin: 0 auto;
+    animation-name: open;
+    animation-duration: 1s;
+}
+@keyframes open {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100;
+    }
+}
